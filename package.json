@@ -1,6 +1,7 @@
 {
   "name": "cron-to-chinese",
-  "version": "1.0.0",
+  "version": "0.0.1",
+  "author": "Far-Away-Flipped",
   "description": "将cron表达式转换为中文描述的JavaScript库",
   "type": "module",
   "main": "./dist/index.js",
@@ -8,6 +9,10 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Far-Away-Flipped/CronToChinese.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +22,5 @@
     "定时任务",
     "翻译"
   ],
-  "author": "",
   "license": "MIT"
 }
