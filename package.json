@@ -2,11 +2,21 @@
   "name": "cron-to-chinese",
   "version": "1.0.0",
   "description": "将cron表达式转换为中文描述的JavaScript库",
-  "main": "index.js",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["cron", "中文", "定时任务", "翻译"],
+  "keywords": [
+    "cron",
+    "中文",
+    "定时任务",
+    "翻译"
+  ],
   "author": "",
   "license": "MIT"
 }

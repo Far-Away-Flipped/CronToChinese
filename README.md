@@ -11,12 +11,14 @@ npm install cron-to-chinese
 ## 使用
 
 ```javascript
-const cronToChinese = require('cron-to-chinese');
+import cronToChinese from 'cron-to-chinese';
 
-console.log(cronToChinese('* * * * *')); // 每分钟每小时
-console.log(cronToChinese('*/5 * * * *')); // 每5分钟每小时
-console.log(cronToChinese('0 8 * * *')); // 在0分在8点
-console.log(cronToChinese('0 8-18 * * *')); // 在0分从8点到18点
+console.log(cronToChinese('* * * * *')); // 每分钟执行一次
+console.log(cronToChinese('0 15 10 * * ? 2005')); // 2005年每天10点15分执行一次
+console.log(cronToChinese('0 15 10 ? * ? 2002-2005')); // 2002-2005年每天10点15分执行一次
+console.log(cronToChinese('0 15 10 ? * 2-6')); // 每周的周一到周五每天10点15分执行一次
+console.log(cronToChinese('* * * * Apr,JUN 5L 2012-2014')); // 2012-2014年每年4、6月每月最后一个周四,每秒执行一次
+console.log(cronToChinese('8/10 0/5 3/4 * * ?')); // 每天从3点开始到23点范围内,每隔4小时每小时从0分开始到55分范围内,每隔5分钟从8秒开始到58秒范围内,每隔10秒执行一次
 ```
 
 ## 功能
