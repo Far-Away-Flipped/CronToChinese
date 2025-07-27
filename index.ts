@@ -235,10 +235,8 @@ function cronToChinese(cronExp: string) {
         }`
       );
     }
-  } else if (second) {
+  } else if (second === "*") {
     result.push(`,每秒`);
-  } else {
-    result.push(",每分钟");
   }
 
   return result.length > 0

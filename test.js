@@ -52,6 +52,7 @@ function testCronExpression() {
     "8/10 0/5 3/4 * * ?",
     "* * * * * *",
     "0 * * * * ?",
+    "32 * * * *",
   ];
 
   testCases.forEach((cron) => {
